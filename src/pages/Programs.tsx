@@ -7,7 +7,7 @@ import middleSchoolImg from "@/assets/middle-school-program.jpg";
 import highSchoolImg from "@/assets/high-school-program.jpg";
 
 const middleSchoolFeatures = [
-  "Introduction to the scientific method",
+  "Introduction to the scientific methodology",
   "Observation and questioning skills",
   "Guided group experiments",
   "Basic data collection & journaling",
@@ -29,11 +29,11 @@ const highSchoolFeatures = [
 ];
 
 const comparisonRows = [
-  { aspect: "Target Grades", middle: "1–8", high: "9–12" },
+  { aspect: "Target Grades", middle: "5–8", high: "9–12" },
   { aspect: "Research Type", middle: "Guided group projects", high: "Independent studies" },
   { aspect: "Mentorship", middle: "Group advisory", high: "1-on-1 expert mentors" },
   { aspect: "Data Skills", middle: "Observation & journaling", high: "Statistical analysis" },
-  { aspect: "Presentations", middle: "School-level symposiums", high: "IRCC & international events" },
+  { aspect: "Presentations", middle: "School-level symposiums, IRCC", high: "IRCC & international events" },
   { aspect: "Outcome", middle: "Research foundation & curiosity", high: "Research portfolio & publications" },
 ];
 
@@ -70,7 +70,7 @@ const Programs = () => (
                 <div className="w-10 h-10 rounded-lg bg-teal-light flex items-center justify-center">
                   <BookOpen className="text-primary" size={20} />
                 </div>
-                <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 1–8</span>
+                <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 6–8</span>
               </div>
               <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">Middle School Program</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
