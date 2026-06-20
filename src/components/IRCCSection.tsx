@@ -22,7 +22,7 @@ const IRCCSection = () => (
             International Research Conference for Children
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            IRCC is a three-day, in-person event where young researchers from grades 1–12 showcase their projects on a global stage. It's where curiosity meets recognition.
+            IRCC is a three-day, in-person event where young researchers from grades 1–12 showcase their projects on a global stage. It's where curiosity meets recognition. Last IRCC was in Milpitas, CA, USA
           </p>
           <ul className="space-y-3 mb-8">
             {[
