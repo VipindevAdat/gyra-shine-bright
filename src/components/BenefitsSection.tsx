@@ -9,7 +9,7 @@ const benefits = [
   {
     icon: Microscope,
     title: "Real Research Skills",
-    description: "Learn authentic research methodology — from hypothesis to data collection to presentation.",
+    description: "Learn authentic research methodology - from problem statement to hypothesis to publishable research.",
   },
   {
     icon: Globe,
@@ -42,7 +42,7 @@ const BenefitsSection = () => (
           What Your Child Gains
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          GYRA goes beyond textbooks — building lifelong skills through hands-on scientific research.
+          GYRA goes beyond textbooks<br />Building lifelong skills through hands-on scientific research.
         </p>
       </div>
 
