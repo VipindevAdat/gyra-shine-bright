@@ -35,7 +35,7 @@ const HeroSection = () => (
               Explore Programs <ArrowRight className="ml-2" size={18} />
             </Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 h-12">
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8 h-12">
             <Link to="/contact">Register Now</Link>
           </Button>
         </div>
