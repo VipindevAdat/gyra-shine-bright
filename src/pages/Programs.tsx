@@ -56,7 +56,7 @@ const Programs = () => (
             A Research Path for Every Age
           </h1>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            From sparking curiosity in young learners to guiding serious research in high school — GYRA provides structured, mentor-led programs at every stage.
+            GYRA was initiated as a research program for middle school students. We further expanded to high school students and started our flagship conference — the International Research Conference for Children (IRCC) — as a platform for young researchers to present their work and interact with leading scientists from different parts of the world.
           </p>
         </div>
       </section>
@@ -72,9 +72,10 @@ const Programs = () => (
                 </div>
                 <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 6–8</span>
               </div>
-              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">Middle School Program</h2>
+              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Laureate Program</h2>
+              <p className="text-sm font-medium text-primary mb-4">Research in Middle School</p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our middle school program introduces students to the joy of scientific inquiry. Through fun, hands-on projects, children learn to observe, question, and explore — building a foundation of curiosity that lasts a lifetime.
+                GYRA's middle school program introduces students to the fundamentals of research through a structured, guided, and highly engaging learning experience. Students work closely with trained mentors on a weekly basis — exploring ideas, asking meaningful questions, and presenting their findings with confidence. The program typically spans approximately three years, and upon successful completion students graduate as <strong className="text-foreground">GYRA Laureates</strong>.
               </p>
               <ul className="space-y-3 mb-8">
                 {middleSchoolFeatures.map((f) => (
@@ -111,9 +112,10 @@ const Programs = () => (
                 </div>
                 <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 9–12</span>
               </div>
-              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">High School Program</h2>
+              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Fellow Program</h2>
+              <p className="text-sm font-medium text-primary mb-4">Research in High School</p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                For students ready to take their curiosity to the next level. Design independent research projects, work with expert mentors, and present your findings on the international stage at IRCC.
+                A personalized one-on-one mentoring program for high school students interested in research, innovation, and global collaboration. Each student receives tailored guidance aligned with their research interests, academic goals, and college application timelines, under the supervision of experienced Ph.D.-level mentors. Students can access the program by volunteering with GYRA and earning mentorship credits, or through a flexible pay-per-hour model that directly supports GYRA's initiatives.
               </p>
               <ul className="space-y-3 mb-8">
                 {highSchoolFeatures.map((f) => (
