@@ -101,7 +101,7 @@ const About = () => (
       </section>
 
       {/* President's Message */}
-      <section className="py-20 lg:py-28 bg-muted">
+      <section className="py-20 lg:py-28">>
         <div className="container max-w-4xl">
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-elevated">
             <div className="flex flex-col md:flex-row gap-8 items-start">
