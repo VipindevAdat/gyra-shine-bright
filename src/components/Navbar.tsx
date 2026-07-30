@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "Programs", path: "/programs" },
+  { label: "Why GYRA", path: "/why-gyra" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];

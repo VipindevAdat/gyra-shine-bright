@@ -20,6 +20,7 @@ const Footer = () => (
             {[
               { label: "Home", path: "/" },
               { label: "Programs", path: "/programs" },
+              { label: "Why GYRA", path: "/why-gyra" },
               { label: "About Us", path: "/about" },
               { label: "Contact", path: "/contact" },
             ].map((l) => (
