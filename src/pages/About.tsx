@@ -101,7 +101,7 @@ const About = () => (
       </section>
 
       {/* President's Message */}
-      <section className="py-20 lg:py-28">>
+      <section className="py-20 lg:py-28">
         <div className="container max-w-4xl">
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-elevated">
             <div className="flex flex-col md:flex-row gap-8 items-start">
@@ -132,7 +132,7 @@ const About = () => (
       </section>
 
       {/* Special Mission */}
-      <section className="py-20 lg:py-28">
+      <section className="py-20 lg:py-28 bg-muted">
         <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <div className="w-14 h-14 rounded-full bg-teal-light flex items-center justify-center mx-auto mb-5">
@@ -140,10 +140,10 @@ const About = () => (
             </div>
             <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">Special Mission: Inclusivity</h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              GYRA welcomes students with disabilities, marking a significant step towards inclusivity in research. Specialists in special education, alongside teachers, provide training in research methodology to empower these students.
+              GYRA supports students with disabilities, fostering their scientific curiosity and research skills. We create an inclusive mentoring platform for children with disabilities, paving the way for them to participate in mainstream research.
             </p>
-            <p className="text-sm text-foreground/60 mt-4 max-w-xl mx-auto">
-              GYRA encourages research among differently-abled students within their field of study to demonstrate that they are equally capable.
+            <p className="text-sm text-foreground/60 mt-4 max-w-2xl mx-auto">
+              GYRA advocates for training in research methodology as a tool for empowering persons with disabilities. This approach of research as an early intervention tool has been part of research and pilot studies under the supervision of Prof. Pavan Antony, Adelphi University, NY.
             </p>
           </div>
         </div>
