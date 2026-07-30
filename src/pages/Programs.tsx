@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { BookOpen, FlaskConical, ArrowRight, CheckCircle } from "lucide-react";
+import { BookOpen, FlaskConical, ArrowRight, CheckCircle, Globe, Accessibility } from "lucide-react";
 import middleSchoolImg from "@/assets/middle-school-program.jpg";
 import highSchoolImg from "@/assets/high-school-program.jpg";
 
@@ -147,8 +147,8 @@ const Programs = () => (
                 <thead>
                   <tr className="bg-muted">
                     <th className="text-left p-4 font-heading font-bold text-foreground">Aspect</th>
-                    <th className="text-left p-4 font-heading font-bold text-primary">Middle School</th>
-                    <th className="text-left p-4 font-heading font-bold text-accent">High School</th>
+                    <th className="text-left p-4 font-heading font-bold text-primary">Laureate Program</th>
+                    <th className="text-left p-4 font-heading font-bold text-accent">Fellow Program</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -165,6 +165,51 @@ const Programs = () => (
           </div>
         </div>
       </section>
+
+      {/* IRCC */}
+      <section className="py-20 lg:py-28 bg-muted">
+        <div className="container max-w-4xl">
+          <div className="text-center mb-8">
+            <div className="w-14 h-14 rounded-full bg-teal-light flex items-center justify-center mx-auto mb-5">
+              <Globe className="text-primary" size={24} />
+            </div>
+            <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">
+              International Research Conference for Children (IRCC)
+            </h2>
+          </div>
+          <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
+            <p>
+              IRCC, launched in 2023, is GYRA's annual flagship program and a premier global platform for student researchers, educators, parents, and other stakeholders. The conference features keynote addresses, plenary sessions, and presentations by eminent scientists, along with oral and poster presentations by school students.
+            </p>
+            <p>
+              A unique aspect of IRCC is its focus on fostering direct interaction between young learners and established scientists — encouraging collaborative learning and inspiring the next generation of researchers and innovators.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Inclusive Research Platform */}
+      <section className="py-20 lg:py-28">
+        <div className="container max-w-4xl">
+          <div className="text-center mb-8">
+            <div className="w-14 h-14 rounded-full bg-teal-light flex items-center justify-center mx-auto mb-5">
+              <Accessibility className="text-primary" size={24} />
+            </div>
+            <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">
+              Inclusive Research Platform for Children with Disabilities
+            </h2>
+          </div>
+          <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
+            <p>
+              GYRA supports students with disabilities, fostering their scientific curiosity and research skills. We create an inclusive mentoring platform for children with disabilities, paving the way for them to participate in mainstream research.
+            </p>
+            <p>
+              GYRA advocates for training in research methodology as a tool for empowering persons with disabilities, ensuring equal opportunities for scientific exploration and innovation. This approach of research as an early intervention tool has been part of research and pilot studies under the supervision of Prof. Pavan Antony, Adelphi University, NY.
+            </p>
+          </div>
+        </div>
+      </section>
+
 
       {/* How It Works */}
       <section className="py-20 lg:py-28 bg-navy text-primary-foreground">
