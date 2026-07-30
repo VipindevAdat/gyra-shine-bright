@@ -44,13 +44,47 @@ const About = () => (
             Global Empowerment Through Young Research
           </h1>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            GYRA — named after an endangered African cat known for its curiosity and swift movement — inspires young minds to pursue their questions like passionate scientists.
+            Global Young Researchers' Academy (GYRA) is an international non-profit organization registered in Oregon, USA, with a registered office in India — dedicated to cultivating research aptitude in school students and shaping the next generation of committed researchers.
+          </p>
+        </div>
+      </section>
+
+      {/* Who We Are */}
+      <section className="py-20 lg:py-28">
+        <div className="container max-w-4xl">
+          <div className="space-y-5 text-muted-foreground leading-relaxed">
+            <p>
+              GYRA envisions addressing the increasing global demand for dedicated researchers by initiating and igniting school students to engage in research, following advanced-level standard scientific research methodology. GYRA provides opportunities to collaborate, facilitate, and offers a new and innovative model of research-oriented education and training.
+            </p>
+            <p>
+              In this mission, GYRA brings together individuals from diverse backgrounds and expertise across the world — including scientists, engineers, doctors, educators, artists, and writers — all united by a shared passion for fostering scientific temper in young minds.
+            </p>
+            <p>
+              We provide group-based training for middle school students and individualized training for high school students, matching them with an expert researcher in their field of interest. High school students also have the opportunity to volunteer for GYRA, actively contribute to the organization, and enhance their leadership skills. We actively encourage collaboration with students from other countries, ensuring cultural exchange and a global perspective for research.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+            {[
+              { value: "5+", label: "Countries" },
+              { value: "2,000+", label: "Students reached" },
+              { value: "200+", label: "Partner schools" },
+              { value: "100+", label: "Volunteer scientists" },
+            ].map((s) => (
+              <div key={s.label} className="bg-card rounded-xl p-6 text-center shadow-card">
+                <div className="text-3xl font-heading font-extrabold text-gradient mb-1">{s.value}</div>
+                <p className="text-xs text-muted-foreground uppercase tracking-wider">{s.label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground text-center mt-6">
+            In the US, GYRA has an active presence in more than 5 states, serving about 100 middle and high school students.
           </p>
         </div>
       </section>
 
       {/* Vision / Mission / Objective */}
-      <section className="py-20 lg:py-28">
+      <section className="py-20 lg:py-28 bg-muted">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((v) => (

@@ -30,11 +30,12 @@ const highSchoolFeatures = [
 
 const comparisonRows = [
   { aspect: "Target Grades", middle: "5–8", high: "9–12" },
+  { aspect: "Duration", middle: "Approx. 3 years (30–36 months)", high: "Flexible, aligned to college timelines" },
   { aspect: "Research Type", middle: "Guided group projects", high: "Independent studies" },
-  { aspect: "Mentorship", middle: "Group advisory", high: "1-on-1 expert mentors" },
+  { aspect: "Mentorship", middle: "Group advisory with trained mentors", high: "1-on-1 Ph.D.-level mentors" },
   { aspect: "Data Skills", middle: "Observation & journaling", high: "Statistical analysis" },
   { aspect: "Presentations", middle: "School-level symposiums, IRCC", high: "IRCC & international events" },
-  { aspect: "Outcome", middle: "Research foundation & curiosity", high: "Research portfolio & publications" },
+  { aspect: "Outcome", middle: "Graduate as a GYRA Laureate", high: "Research portfolio & publications" },
 ];
 
 const steps = [
