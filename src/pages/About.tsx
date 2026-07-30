@@ -181,7 +181,7 @@ const About = () => (
           </div>
           <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">Global Presence</h2>
           <p className="text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
-            Starting from Kerala, India, GYRA has expanded its reach across 15+ countries — connecting young researchers with mentors and peers around the world.
+            GYRA currently operates in over 5 countries, partners with 200+ schools, and has an active presence in more than 5 US states — connecting young researchers with mentors and peers around the world.
           </p>
           <img
             src="https://thinkgyra.org/front/images/map.png"
