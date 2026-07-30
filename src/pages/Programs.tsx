@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { BookOpen, FlaskConical, ArrowRight, CheckCircle } from "lucide-react";
+import { BookOpen, FlaskConical, ArrowRight, CheckCircle, Globe, Accessibility } from "lucide-react";
 import middleSchoolImg from "@/assets/middle-school-program.jpg";
 import highSchoolImg from "@/assets/high-school-program.jpg";
 
@@ -30,11 +30,12 @@ const highSchoolFeatures = [
 
 const comparisonRows = [
   { aspect: "Target Grades", middle: "5–8", high: "9–12" },
+  { aspect: "Duration", middle: "Approx. 3 years (30–36 months)", high: "Flexible, aligned to college timelines" },
   { aspect: "Research Type", middle: "Guided group projects", high: "Independent studies" },
-  { aspect: "Mentorship", middle: "Group advisory", high: "1-on-1 expert mentors" },
+  { aspect: "Mentorship", middle: "Group advisory with trained mentors", high: "1-on-1 Ph.D.-level mentors" },
   { aspect: "Data Skills", middle: "Observation & journaling", high: "Statistical analysis" },
   { aspect: "Presentations", middle: "School-level symposiums, IRCC", high: "IRCC & international events" },
-  { aspect: "Outcome", middle: "Research foundation & curiosity", high: "Research portfolio & publications" },
+  { aspect: "Outcome", middle: "Graduate as a GYRA Laureate", high: "Research portfolio & publications" },
 ];
 
 const steps = [
@@ -56,7 +57,7 @@ const Programs = () => (
             A Research Path for Every Age
           </h1>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            From sparking curiosity in young learners to guiding serious research in high school — GYRA provides structured, mentor-led programs at every stage.
+            GYRA was initiated as a research program for middle school students. We further expanded to high school students and started our flagship conference — the International Research Conference for Children (IRCC) — as a platform for young researchers to present their work and interact with leading scientists from different parts of the world.
           </p>
         </div>
       </section>
@@ -72,9 +73,10 @@ const Programs = () => (
                 </div>
                 <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 6–8</span>
               </div>
-              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">Middle School Program</h2>
+              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Laureate Program</h2>
+              <p className="text-sm font-medium text-primary mb-4">Research in Middle School</p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our middle school program introduces students to the joy of scientific inquiry. Through fun, hands-on projects, children learn to observe, question, and explore — building a foundation of curiosity that lasts a lifetime.
+                GYRA's middle school program introduces students to the fundamentals of research through a structured, guided, and highly engaging learning experience. Students work closely with trained mentors on a weekly basis — exploring ideas, asking meaningful questions, and presenting their findings with confidence. The program typically spans approximately three years, and upon successful completion students graduate as <strong className="text-foreground">GYRA Laureates</strong>.
               </p>
               <ul className="space-y-3 mb-8">
                 {middleSchoolFeatures.map((f) => (
@@ -111,9 +113,10 @@ const Programs = () => (
                 </div>
                 <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 9–12</span>
               </div>
-              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">High School Program</h2>
+              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Fellow Program</h2>
+              <p className="text-sm font-medium text-primary mb-4">Research in High School</p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                For students ready to take their curiosity to the next level. Design independent research projects, work with expert mentors, and present your findings on the international stage at IRCC.
+                A personalized one-on-one mentoring program for high school students interested in research, innovation, and global collaboration. Each student receives tailored guidance aligned with their research interests, academic goals, and college application timelines, under the supervision of experienced Ph.D.-level mentors. Students can access the program by volunteering with GYRA and earning mentorship credits, or through a flexible pay-per-hour model that directly supports GYRA's initiatives.
               </p>
               <ul className="space-y-3 mb-8">
                 {highSchoolFeatures.map((f) => (
@@ -145,8 +148,8 @@ const Programs = () => (
                 <thead>
                   <tr className="bg-muted">
                     <th className="text-left p-4 font-heading font-bold text-foreground">Aspect</th>
-                    <th className="text-left p-4 font-heading font-bold text-primary">Middle School</th>
-                    <th className="text-left p-4 font-heading font-bold text-accent">High School</th>
+                    <th className="text-left p-4 font-heading font-bold text-primary">Laureate Program</th>
+                    <th className="text-left p-4 font-heading font-bold text-accent">Fellow Program</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -163,6 +166,51 @@ const Programs = () => (
           </div>
         </div>
       </section>
+
+      {/* IRCC */}
+      <section className="py-20 lg:py-28 bg-muted">
+        <div className="container max-w-4xl">
+          <div className="text-center mb-8">
+            <div className="w-14 h-14 rounded-full bg-teal-light flex items-center justify-center mx-auto mb-5">
+              <Globe className="text-primary" size={24} />
+            </div>
+            <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">
+              International Research Conference for Children (IRCC)
+            </h2>
+          </div>
+          <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
+            <p>
+              IRCC, launched in 2023, is GYRA's annual flagship program and a premier global platform for student researchers, educators, parents, and other stakeholders. The conference features keynote addresses, plenary sessions, and presentations by eminent scientists, along with oral and poster presentations by school students.
+            </p>
+            <p>
+              A unique aspect of IRCC is its focus on fostering direct interaction between young learners and established scientists — encouraging collaborative learning and inspiring the next generation of researchers and innovators.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Inclusive Research Platform */}
+      <section className="py-20 lg:py-28">
+        <div className="container max-w-4xl">
+          <div className="text-center mb-8">
+            <div className="w-14 h-14 rounded-full bg-teal-light flex items-center justify-center mx-auto mb-5">
+              <Accessibility className="text-primary" size={24} />
+            </div>
+            <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">
+              Inclusive Research Platform for Children with Disabilities
+            </h2>
+          </div>
+          <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
+            <p>
+              GYRA supports students with disabilities, fostering their scientific curiosity and research skills. We create an inclusive mentoring platform for children with disabilities, paving the way for them to participate in mainstream research.
+            </p>
+            <p>
+              GYRA advocates for training in research methodology as a tool for empowering persons with disabilities, ensuring equal opportunities for scientific exploration and innovation. This approach of research as an early intervention tool has been part of research and pilot studies under the supervision of Prof. Pavan Antony, Adelphi University, NY.
+            </p>
+          </div>
+        </div>
+      </section>
+
 
       {/* How It Works */}
       <section className="py-20 lg:py-28 bg-navy text-primary-foreground">

@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import BenefitsSection from "@/components/BenefitsSection";
+import GyraProvidesSection from "@/components/GyraProvidesSection";
 import ProgramsOverview from "@/components/ProgramsOverview";
 import StatsBar from "@/components/StatsBar";
 import IRCCSection from "@/components/IRCCSection";
@@ -14,6 +15,7 @@ const Index = () => (
     <main>
       <HeroSection />
       <BenefitsSection />
+      <GyraProvidesSection />
       <ProgramsOverview />
       <StatsBar />
       <IRCCSection />
