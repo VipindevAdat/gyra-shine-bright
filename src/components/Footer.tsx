@@ -22,6 +22,7 @@ const Footer = () => (
               { label: "Programs", path: "/programs" },
               { label: "Why GYRA", path: "/why-gyra" },
               { label: "About Us", path: "/about" },
+              { label: "GYRA Institutions", path: "/institutions" },
               { label: "Contact", path: "/contact" },
             ].map((l) => (
               <li key={l.path}>
