@@ -174,23 +174,36 @@ const About = () => (
           <div className="text-center mb-12">
             <span className="text-sm font-medium text-primary uppercase tracking-wider">Leadership</span>
             <h2 className="text-3xl font-heading font-extrabold text-foreground mt-3 mb-4">Our Team</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Meet the officials leading GYRA globally and across the India region.
+            </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {teamMembers.map((m) => (
-              <div key={m.name} className="text-center">
-                <img
-                  src={m.img}
-                  alt={m.name}
-                  className="w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow-card"
-                  loading="lazy"
-                />
-                <h4 className="font-heading font-bold text-sm text-foreground">{m.name}</h4>
-                <p className="text-xs text-muted-foreground">{m.role}</p>
+
+          {[
+            { heading: "Global Officials", people: globalOfficials },
+            { heading: "India Officials", people: indiaOfficials },
+          ].map((group) => (
+            <div key={group.heading} className="mb-16 last:mb-0">
+              <h3 className="font-heading font-bold text-xl text-foreground text-center mb-8">{group.heading}</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                {group.people.map((m) => (
+                  <div key={m.name} className="text-center">
+                    <img
+                      src={m.img}
+                      alt={`${m.name}, ${m.role} at GYRA`}
+                      className="w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow-card bg-card"
+                      loading="lazy"
+                    />
+                    <h4 className="font-heading font-bold text-sm text-foreground">{m.name}</h4>
+                    <p className="text-xs text-muted-foreground">{m.role}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
+
 
       {/* Global Map */}
       <section className="py-20 lg:py-28">
