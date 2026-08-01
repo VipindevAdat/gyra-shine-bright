@@ -38,12 +38,58 @@ const comparisonRows = [
   { aspect: "Outcome", middle: "Graduate as a GYRA Laureate", high: "Research portfolio & publications" },
 ];
 
-const steps = [
-  { step: "1", title: "Register", desc: "Sign up through GYRA or your school's GYRA chapter." },
-  { step: "2", title: "Get Matched", desc: "Connect with a mentor who aligns with your research interest." },
-  { step: "3", title: "Research", desc: "Design and conduct your research project with expert guidance." },
-  { step: "4", title: "Present", desc: "Showcase your work at symposiums and the annual IRCC conference." },
+const stages = [
+  {
+    step: "1",
+    title: "Inception",
+    items: [
+      "Outreach to schools, teachers, or parents",
+      "Identification of interested participants",
+      "Orientation sessions",
+      "GYRA tree planting",
+      "Signing of MOU",
+    ],
+  },
+  {
+    step: "2",
+    title: "Establishment",
+    items: [
+      "Formation of GYRA units",
+      "Assignment of an expert mentor",
+      "Training sessions for teachers and students",
+    ],
+  },
+  {
+    step: "3",
+    title: "Exploration",
+    items: [
+      "Weekly one-hour meetings",
+      "Topic selection after several iterations",
+      "Research planning and literature review",
+      "Experimental design and data collection",
+      "Analysis and reporting",
+    ],
+  },
+  {
+    step: "4",
+    title: "Dissemination",
+    items: [
+      "Thesis preparation and defense",
+      "Conference presentations, including IRCC",
+      "Publication in peer-reviewed international journals",
+    ],
+  },
 ];
+
+const roadmap = [
+  { year: "2023", milestone: "First school in GYRA" },
+  { year: "2026", milestone: "2,000 kids, 5+ countries, GYRA peer-reviewed research journal" },
+  { year: "2028", milestone: "Post-GYRA Fellowship" },
+  { year: "2029", milestone: "GYRA funded research" },
+  { year: "2030", milestone: "GYRA Labs" },
+  { year: "2035", milestone: "Add 2,000 kids/year, expanding to 10+ countries/year" },
+];
+
 
 const Programs = () => (
   <>
