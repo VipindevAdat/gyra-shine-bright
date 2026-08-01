@@ -258,25 +258,55 @@ const Programs = () => (
       </section>
 
 
-      {/* How It Works */}
+      {/* How It Works — Operations & Approach */}
       <section className="py-20 lg:py-28 bg-navy text-primary-foreground">
-        <div className="container max-w-4xl">
-          <h2 className="text-3xl font-heading font-extrabold text-center mb-12">
-            How It Works
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {steps.map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="w-14 h-14 rounded-full bg-gradient-hero flex items-center justify-center mx-auto mb-4 text-xl font-heading font-extrabold">
+        <div className="container max-w-5xl">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-sm font-medium text-accent uppercase tracking-wider">How It Works</span>
+            <h2 className="text-3xl font-heading font-extrabold mt-3 mb-5">Operations and Approach</h2>
+            <p className="text-primary-foreground/70 leading-relaxed">
+              GYRA operates through structured organizations including schools and non-profit organizations where children can be safely gathered for research activities. In special cases, GYRA works with neighbourhoods, provided parents are willing to take responsibility for the safe conduct of the program. For the high school program, the same approach is followed on an individual basis, on a timeline agreed upon by the scholar and the advisor.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {stages.map((s) => (
+              <div key={s.step} className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-xl p-6">
+                <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center mb-4 text-lg font-heading font-extrabold">
                   {s.step}
                 </div>
-                <h3 className="font-heading font-bold text-lg mb-2">{s.title}</h3>
-                <p className="text-sm text-primary-foreground/70 leading-relaxed">{s.desc}</p>
+                <h3 className="font-heading font-bold text-lg mb-3">{s.title}</h3>
+                <ul className="space-y-2">
+                  {s.items.map((i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-primary-foreground/70 leading-relaxed">
+                      <div className="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-1.5" />
+                      {i}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
+
+          {/* Roadmap */}
+          <div className="mt-20">
+            <h3 className="text-2xl font-heading font-extrabold text-center mb-4">The GYRA Roadmap</h3>
+            <p className="text-center text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto mb-12">
+              GYRA is not just a program — it is a long-term movement to transform how young students engage with science, research, and innovation.
+            </p>
+            <ol className="relative border-l border-primary-foreground/20 ml-3 space-y-8">
+              {roadmap.map((r) => (
+                <li key={r.year} className="pl-8 relative">
+                  <span className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-gradient-hero border-2 border-navy" />
+                  <div className="font-heading font-extrabold text-accent text-lg leading-none mb-1">{r.year}</div>
+                  <p className="text-sm text-primary-foreground/70 leading-relaxed">{r.milestone}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </section>
+
 
       {/* CTA */}
       <section className="py-20 lg:py-28 text-center">
