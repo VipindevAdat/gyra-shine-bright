@@ -23,14 +23,33 @@ const values = [
   },
 ];
 
-const teamMembers = [
-  { name: "Dr. Irimpan Mathews", role: "Global President", img: "https://thinkgyra.org/uploads/teams/1/GYRA_1734498933.png" },
+const globalOfficials = [
+  { name: "Dr. Irimpan Mathews", role: "President", img: "https://thinkgyra.org/uploads/teams/1/GYRA_1734498933.png" },
   { name: "Dr. Vipindev Adat Vasudevan", role: "Secretary", img: "https://thinkgyra.org/uploads/teams/2/GYRA_1734500214.jpg" },
   { name: "Ms. Divya V V", role: "Treasurer", img: "https://thinkgyra.org/uploads/teams/3/GYRA_1734500341.png" },
   { name: "Ms. Devi Gireesh", role: "Head of IT", img: "https://thinkgyra.org/uploads/teams/4/GYRA_1734499917.png" },
   { name: "Dr. Finosh Thankam", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/6/GYRA_1735655308.png" },
   { name: "Mr. Raibin Raphy", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/7/GYRA_1734499573.png" },
+  { name: "Mr. Nixon Xavier", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/10/GYRA_1734499608.png" },
+  { name: "Mr. Viju Kolattukudy", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/11/GYRA_1734499730.jpg" },
+  { name: "Dr. Ramachandran Thekkedath", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/23/GYRA_1778190154.jpg" },
+  { name: "Dr. Usha R. Thekkedath", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/24/GYRA_1778190274.jpg" },
 ];
+
+const indiaOfficials = [
+  { name: "Dr. Renju Joseph", role: "President", img: "https://thinkgyra.org/uploads/teams/12/GYRA_1734499183.png" },
+  { name: "Dr. Priyankar Bhooshan", role: "Secretary", img: "https://thinkgyra.org/uploads/teams/13/GYRA_1734499105.png" },
+  { name: "Ms. Maria", role: "Joint Secretary", img: "https://thinkgyra.org/uploads/teams/14/GYRA_1735655401.png" },
+  { name: "Fr. Vincent Pereppadan", role: "Director of Operations", img: "https://thinkgyra.org/uploads/teams/15/GYRA_1735655383.png" },
+  { name: "Ms. Sowmini K V", role: "Treasurer", img: "https://thinkgyra.org/uploads/teams/16/GYRA_1735655411.png" },
+  { name: "Ms. Renjitha C S", role: "Joint Treasurer", img: "https://thinkgyra.org/uploads/teams/17/GYRA_1734500488.png" },
+  { name: "Fr. Jijo Kandamkulathy", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/18/GYRA_1735655374.png" },
+  { name: "Dr. Nisha V M", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/19/GYRA_1735655322.png" },
+  { name: "Ms. Devabala Smitha", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/20/GYRA_1734502840.jpg" },
+  { name: "Dr. Manjula Devananda", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/21/GYRA_1734500847.png" },
+  { name: "Mr. Abish Jose", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/22/GYRA_1735655392.png" },
+];
+
 
 const About = () => (
   <>
