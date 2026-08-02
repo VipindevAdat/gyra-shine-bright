@@ -259,15 +259,17 @@ const Programs = () => (
             <p className="text-center text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto mb-12">
               GYRA is not just a program — it is a long-term movement to transform how young students engage with science, research, and innovation.
             </p>
-            <ol className="relative border-l border-primary-foreground/20 ml-3 space-y-8">
+            <ol className="flex gap-6 overflow-x-auto pb-4 snap-x md:grid md:grid-cols-6 md:gap-4 md:overflow-visible">
               {roadmap.map((r) => (
-                <li key={r.year} className="pl-8 relative">
-                  <span className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-gradient-hero border-2 border-navy" />
+                <li key={r.year} className="relative snap-start shrink-0 w-56 md:w-auto pt-8">
+                  <span className="absolute left-0 top-[7px] h-px w-full bg-primary-foreground/20" />
+                  <span className="absolute left-0 top-0 w-4 h-4 rounded-full bg-gradient-hero border-2 border-navy" />
                   <div className="font-heading font-extrabold text-accent text-lg leading-none mb-1">{r.year}</div>
                   <p className="text-sm text-primary-foreground/70 leading-relaxed">{r.milestone}</p>
                 </li>
               ))}
             </ol>
+
           </div>
         </div>
       </section>
