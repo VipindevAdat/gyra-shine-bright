@@ -281,7 +281,7 @@ const WhyGyra = () => (
       {/* Audience tabs */}
       <section className="py-16 lg:py-24">
         <div className="container max-w-5xl">
-          <Tabs defaultValue="parents" className="w-full">
+          <Tabs defaultValue="students" className="w-full">
             <TabsList className="flex flex-wrap h-auto justify-center gap-2 bg-transparent p-0 mb-12">
               {audiences.map((a) => (
                 <TabsTrigger
