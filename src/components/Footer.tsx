@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Globe } from "lucide-react";
-import gyraLogo from "@/assets/gyra-logo.png.asset.json";
+import gyraLogo from "@/assets/gyra_logo.webp";
 
 const Footer = () => (
   <footer className="bg-navy text-primary-foreground">
@@ -9,7 +9,7 @@ const Footer = () => (
         {/* Brand */}
         <div className="md:col-span-1">
           <img
-            src={gyraLogo.url}
+            src={gyraLogo}
             alt="GYRA — Global Young Researchers' Academy logo"
             className="h-14 w-auto mb-4 bg-primary-foreground rounded-md p-2"
           />
