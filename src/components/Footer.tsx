@@ -68,7 +68,7 @@ const Footer = () => (
           <ul className="space-y-3 text-sm">
             <li className="flex items-start gap-2 text-primary-foreground/70">
               <Mail size={16} className="mt-0.5 shrink-0" />
-              <span>info@thinkgyra.org</span>
+              <span>gyraglobal@gmail.com</span>
             </li>
             <li className="flex items-start gap-2 text-primary-foreground/70">
               <Globe size={16} className="mt-0.5 shrink-0" />
@@ -76,7 +76,7 @@ const Footer = () => (
             </li>
             <li className="flex items-start gap-2 text-primary-foreground/70">
               <MapPin size={16} className="mt-0.5 shrink-0" />
-              <span>Kerala, India (Global Operations)</span>
+              <span>Oregon, USA (Global Operations)</span>
             </li>
           </ul>
         </div>
