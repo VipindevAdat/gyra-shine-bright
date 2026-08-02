@@ -155,7 +155,7 @@ const About = () => (
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-elevated">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <img
-                src="https://thinkgyra.org/uploads/teams/1/GYRA_1734498933.png"
+                src={team1.url}
                 alt="Dr. Irimpan Mathews"
                 className="w-32 h-32 rounded-xl object-cover shrink-0"
                 loading="lazy"
