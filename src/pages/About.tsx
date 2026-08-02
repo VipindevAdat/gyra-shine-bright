@@ -252,7 +252,7 @@ const About = () => (
             GYRA currently operates in over 5 countries, partners with 200+ schools, and has an active presence in more than 5 US states — connecting young researchers with mentors and peers around the world.
           </p>
           <img
-            src="https://thinkgyra.org/front/images/map.png"
+            src={globalMap.url}
             alt="GYRA's global expansion map"
             className="w-full rounded-xl shadow-card"
             loading="lazy"
