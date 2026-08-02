@@ -28,15 +28,8 @@ const highSchoolFeatures = [
   "Portfolio building for college applications",
 ];
 
-const comparisonRows = [
-  { aspect: "Target Grades", middle: "5–8", high: "9–12" },
-  { aspect: "Duration", middle: "Approx. 3 years (30–36 months)", high: "Flexible, aligned to college timelines" },
-  { aspect: "Research Type", middle: "Guided group projects", high: "Independent studies" },
-  { aspect: "Mentorship", middle: "Group advisory with trained mentors", high: "1-on-1 Ph.D.-level mentors" },
-  { aspect: "Data Skills", middle: "Observation & journaling", high: "Statistical analysis" },
-  { aspect: "Presentations", middle: "School-level symposiums, IRCC", high: "IRCC & international events" },
-  { aspect: "Outcome", middle: "Graduate as a GYRA Laureate", high: "Research portfolio & publications" },
-];
+
+
 
 const stages = [
   {
@@ -182,36 +175,8 @@ const Programs = () => (
         </div>
       </section>
 
-      {/* Comparison */}
-      <section className="py-20 lg:py-28">
-        <div className="container max-w-4xl">
-          <h2 className="text-3xl font-heading font-extrabold text-foreground text-center mb-12">
-            Program Comparison
-          </h2>
-          <div className="bg-card rounded-xl shadow-card overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="text-left p-4 font-heading font-bold text-foreground">Aspect</th>
-                    <th className="text-left p-4 font-heading font-bold text-primary">Laureate Program</th>
-                    <th className="text-left p-4 font-heading font-bold text-accent">Fellow Program</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparisonRows.map((row) => (
-                    <tr key={row.aspect} className="border-t border-border">
-                      <td className="p-4 font-medium text-foreground">{row.aspect}</td>
-                      <td className="p-4 text-muted-foreground">{row.middle}</td>
-                      <td className="p-4 text-muted-foreground">{row.high}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
 
       {/* IRCC */}
       <section className="py-20 lg:py-28 bg-muted">
