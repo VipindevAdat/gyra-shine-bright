@@ -218,12 +218,18 @@ const About = () => (
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
                 {group.people.map((m) => (
                   <div key={m.name} className="text-center">
-                    <img
-                      src={m.img}
-                      alt={`${m.name}, ${m.role} at GYRA`}
-                      className="w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow-card bg-card"
-                      loading="lazy"
-                    />
+                    {m.img ? (
+                      <img
+                        src={m.img}
+                        alt={`${m.name}, ${m.role} at GYRA`}
+                        className="w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow-card bg-card"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="w-24 h-24 rounded-full mx-auto mb-3 shadow-card bg-teal-light flex items-center justify-center font-heading font-extrabold text-xl text-primary">
+                        {initials(m.name)}
+                      </div>
+                    )}
                     <h4 className="font-heading font-bold text-sm text-foreground">{m.name}</h4>
                     <p className="text-xs text-muted-foreground">{m.role}</p>
                   </div>
