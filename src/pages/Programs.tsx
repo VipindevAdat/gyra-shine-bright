@@ -28,15 +28,8 @@ const highSchoolFeatures = [
   "Portfolio building for college applications",
 ];
 
-const comparisonRows = [
-  { aspect: "Target Grades", middle: "5–8", high: "9–12" },
-  { aspect: "Duration", middle: "Approx. 3 years (30–36 months)", high: "Flexible, aligned to college timelines" },
-  { aspect: "Research Type", middle: "Guided group projects", high: "Independent studies" },
-  { aspect: "Mentorship", middle: "Group advisory with trained mentors", high: "1-on-1 Ph.D.-level mentors" },
-  { aspect: "Data Skills", middle: "Observation & journaling", high: "Statistical analysis" },
-  { aspect: "Presentations", middle: "School-level symposiums, IRCC", high: "IRCC & international events" },
-  { aspect: "Outcome", middle: "Graduate as a GYRA Laureate", high: "Research portfolio & publications" },
-];
+
+
 
 const stages = [
   {
@@ -182,36 +175,8 @@ const Programs = () => (
         </div>
       </section>
 
-      {/* Comparison */}
-      <section className="py-20 lg:py-28">
-        <div className="container max-w-4xl">
-          <h2 className="text-3xl font-heading font-extrabold text-foreground text-center mb-12">
-            Program Comparison
-          </h2>
-          <div className="bg-card rounded-xl shadow-card overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="text-left p-4 font-heading font-bold text-foreground">Aspect</th>
-                    <th className="text-left p-4 font-heading font-bold text-primary">Laureate Program</th>
-                    <th className="text-left p-4 font-heading font-bold text-accent">Fellow Program</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparisonRows.map((row) => (
-                    <tr key={row.aspect} className="border-t border-border">
-                      <td className="p-4 font-medium text-foreground">{row.aspect}</td>
-                      <td className="p-4 text-muted-foreground">{row.middle}</td>
-                      <td className="p-4 text-muted-foreground">{row.high}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
 
       {/* IRCC */}
       <section className="py-20 lg:py-28 bg-muted">
@@ -294,15 +259,17 @@ const Programs = () => (
             <p className="text-center text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto mb-12">
               GYRA is not just a program — it is a long-term movement to transform how young students engage with science, research, and innovation.
             </p>
-            <ol className="relative border-l border-primary-foreground/20 ml-3 space-y-8">
+            <ol className="flex gap-6 overflow-x-auto pb-4 snap-x md:grid md:grid-cols-6 md:gap-4 md:overflow-visible">
               {roadmap.map((r) => (
-                <li key={r.year} className="pl-8 relative">
-                  <span className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-gradient-hero border-2 border-navy" />
+                <li key={r.year} className="relative snap-start shrink-0 w-56 md:w-auto pt-8">
+                  <span className="absolute left-0 top-[7px] h-px w-full bg-primary-foreground/20" />
+                  <span className="absolute left-0 top-0 w-4 h-4 rounded-full bg-gradient-hero border-2 border-navy" />
                   <div className="font-heading font-extrabold text-accent text-lg leading-none mb-1">{r.year}</div>
                   <p className="text-sm text-primary-foreground/70 leading-relaxed">{r.milestone}</p>
                 </li>
               ))}
             </ol>
+
           </div>
         </div>
       </section>

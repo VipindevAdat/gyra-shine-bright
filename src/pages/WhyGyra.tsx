@@ -25,44 +25,6 @@ type Audience = {
 
 const audiences: Audience[] = [
   {
-    id: "parents",
-    label: "Parents",
-    icon: Users,
-    heading: "For Parents",
-    intro:
-      "Choosing the right opportunities for your child is critical in today's competitive and rapidly evolving world. GYRA provides a structured and meaningful pathway for students to go beyond traditional learning, helping them build strong academic profiles while developing essential life skills that extend far beyond the classroom.",
-    points: [
-      {
-        title: "Stronger College Applications",
-        text: "Long-term research experience and presentations at international platforms like IRCC help students stand out with depth, initiative, and originality.",
-      },
-      {
-        title: "Early Exposure to Research & Careers",
-        text: "Students explore real-world problems, helping them identify interests and make informed academic choices.",
-      },
-      {
-        title: "Critical Thinking & Problem-Solving",
-        text: "Students learn to analyze, question, and approach complex challenges with structured reasoning.",
-      },
-      {
-        title: "Confidence & Communication",
-        text: "Regular presentations and expert interactions build strong public speaking and articulation skills.",
-      },
-      {
-        title: "Character & Work Ethic",
-        text: "GYRA fosters integrity, perseverance, accountability, and ethical thinking — qualities essential for long-term success.",
-      },
-      {
-        title: "Mentorship & Global Exposure",
-        text: "Guidance from experienced researchers connects students to global academic standards and practices. Students can also request letters of recommendation from their mentors if required for their applications.",
-      },
-      {
-        title: "Safe, Structured & Community-Oriented Environment",
-        text: "Programs are conducted with trained mentors, with opportunities for parents to engage and contribute to the GYRA community.",
-      },
-    ],
-  },
-  {
     id: "students",
     label: "Students",
     icon: GraduationCap,
@@ -98,6 +60,45 @@ const audiences: Audience[] = [
       },
     ],
   },
+  {
+    id: "parents",
+    label: "Parents",
+    icon: Users,
+    heading: "For Parents",
+    intro:
+      "Choosing the right opportunities for your child is critical in today's competitive and rapidly evolving world. GYRA provides a structured and meaningful pathway for students to go beyond traditional learning, helping them build strong academic profiles while developing essential life skills that extend far beyond the classroom.",
+    points: [
+      {
+        title: "Mentorship & Global Exposure",
+        text: "Guidance from experienced researchers connects students to global academic standards and practices. Students can also request letters of recommendation from their mentors if required for their applications.",
+      },
+      {
+        title: "Early Exposure to Research & Careers",
+        text: "Students explore real-world problems, helping them identify interests and make informed academic choices.",
+      },
+      {
+        title: "Critical Thinking & Problem-Solving",
+        text: "Students learn to analyze, question, and approach complex challenges with structured reasoning.",
+      },
+      {
+        title: "Confidence & Communication",
+        text: "Regular presentations and expert interactions build strong public speaking and articulation skills.",
+      },
+      {
+        title: "Character & Work Ethic",
+        text: "GYRA fosters integrity, perseverance, accountability, and ethical thinking — qualities essential for long-term success.",
+      },
+      {
+        title: "Stronger College Applications",
+        text: "Long-term research experience and presentations at international platforms like IRCC help students stand out with depth, initiative, and originality.",
+      },
+      {
+        title: "Safe, Structured & Community-Oriented Environment",
+        text: "Programs are conducted with trained mentors, with opportunities for parents to engage and contribute to the GYRA community.",
+      },
+    ],
+  },
+
   {
     id: "teachers",
     label: "Teachers",
@@ -280,7 +281,7 @@ const WhyGyra = () => (
       {/* Audience tabs */}
       <section className="py-16 lg:py-24">
         <div className="container max-w-5xl">
-          <Tabs defaultValue="parents" className="w-full">
+          <Tabs defaultValue="students" className="w-full">
             <TabsList className="flex flex-wrap h-auto justify-center gap-2 bg-transparent p-0 mb-12">
               {audiences.map((a) => (
                 <TabsTrigger

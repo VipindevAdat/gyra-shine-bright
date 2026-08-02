@@ -1,6 +1,26 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Eye, Target, Lightbulb, Heart, Globe } from "lucide-react";
+import team1 from "@/assets/team/team-1.png.asset.json";
+import team2 from "@/assets/team/team-2.jpg.asset.json";
+import team3 from "@/assets/team/team-3.png.asset.json";
+import team4 from "@/assets/team/team-4.png.asset.json";
+import team6 from "@/assets/team/team-6.png.asset.json";
+import team7 from "@/assets/team/team-7.png.asset.json";
+import team10 from "@/assets/team/team-10.png.asset.json";
+import team11 from "@/assets/team/team-11.jpg.asset.json";
+import team12 from "@/assets/team/team-12.png.asset.json";
+import team13 from "@/assets/team/team-13.png.asset.json";
+import team14 from "@/assets/team/team-14.png.asset.json";
+import team15 from "@/assets/team/team-15.png.asset.json";
+import team16 from "@/assets/team/team-16.png.asset.json";
+import team17 from "@/assets/team/team-17.png.asset.json";
+import team18 from "@/assets/team/team-18.png.asset.json";
+import team19 from "@/assets/team/team-19.png.asset.json";
+import team20 from "@/assets/team/team-20.jpg.asset.json";
+import team21 from "@/assets/team/team-21.png.asset.json";
+import team22 from "@/assets/team/team-22.png.asset.json";
+import globalMap from "@/assets/team/global-map.png.asset.json";
 
 const values = [
   {
@@ -23,32 +43,42 @@ const values = [
   },
 ];
 
+const initials = (name: string) =>
+  name
+    .replace(/^(Dr\.|Mr\.|Ms\.|Mrs\.|Fr\.)\s+/i, "")
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((n) => n[0])
+    .join("");
+
 const globalOfficials = [
-  { name: "Dr. Irimpan Mathews", role: "President", img: "https://thinkgyra.org/uploads/teams/1/GYRA_1734498933.png" },
-  { name: "Dr. Vipindev Adat Vasudevan", role: "Secretary", img: "https://thinkgyra.org/uploads/teams/2/GYRA_1734500214.jpg" },
-  { name: "Ms. Divya V V", role: "Treasurer", img: "https://thinkgyra.org/uploads/teams/3/GYRA_1734500341.png" },
-  { name: "Ms. Devi Gireesh", role: "Head of IT", img: "https://thinkgyra.org/uploads/teams/4/GYRA_1734499917.png" },
-  { name: "Dr. Finosh Thankam", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/6/GYRA_1735655308.png" },
-  { name: "Mr. Raibin Raphy", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/7/GYRA_1734499573.png" },
-  { name: "Mr. Nixon Xavier", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/10/GYRA_1734499608.png" },
-  { name: "Mr. Viju Kolattukudy", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/11/GYRA_1734499730.jpg" },
-  { name: "Dr. Ramachandran Thekkedath", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/23/GYRA_1778190154.jpg" },
-  { name: "Dr. Usha R. Thekkedath", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/24/GYRA_1778190274.jpg" },
+  { name: "Dr. Irimpan Mathews", role: "President", img: team1.url },
+  { name: "Dr. Vipindev Adat Vasudevan", role: "Secretary", img: team2.url },
+  { name: "Ms. Divya V V", role: "Treasurer", img: team3.url },
+  { name: "Ms. Devi Gireesh", role: "Head of IT", img: team4.url },
+  { name: "Dr. Finosh Thankam", role: "Executive Member", img: team6.url },
+  { name: "Mr. Raibin Raphy", role: "Executive Member", img: team7.url },
+  { name: "Mr. Nixon Xavier", role: "Executive Member", img: team10.url },
+  { name: "Mr. Viju Kolattukudy", role: "Executive Member", img: team11.url },
+  { name: "Dr. Ramachandran Thekkedath", role: "Executive Member", img: "" },
+  { name: "Dr. Usha R. Thekkedath", role: "Executive Member", img: "" },
 ];
 
 const indiaOfficials = [
-  { name: "Dr. Renju Joseph", role: "President", img: "https://thinkgyra.org/uploads/teams/12/GYRA_1734499183.png" },
-  { name: "Dr. Priyankar Bhooshan", role: "Secretary", img: "https://thinkgyra.org/uploads/teams/13/GYRA_1734499105.png" },
-  { name: "Ms. Maria", role: "Joint Secretary", img: "https://thinkgyra.org/uploads/teams/14/GYRA_1735655401.png" },
-  { name: "Fr. Vincent Pereppadan", role: "Director of Operations", img: "https://thinkgyra.org/uploads/teams/15/GYRA_1735655383.png" },
-  { name: "Ms. Sowmini K V", role: "Treasurer", img: "https://thinkgyra.org/uploads/teams/16/GYRA_1735655411.png" },
-  { name: "Ms. Renjitha C S", role: "Joint Treasurer", img: "https://thinkgyra.org/uploads/teams/17/GYRA_1734500488.png" },
-  { name: "Fr. Jijo Kandamkulathy", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/18/GYRA_1735655374.png" },
-  { name: "Dr. Nisha V M", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/19/GYRA_1735655322.png" },
-  { name: "Ms. Devabala Smitha", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/20/GYRA_1734502840.jpg" },
-  { name: "Dr. Manjula Devananda", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/21/GYRA_1734500847.png" },
-  { name: "Mr. Abish Jose", role: "Executive Member", img: "https://thinkgyra.org/uploads/teams/22/GYRA_1735655392.png" },
+  { name: "Dr. Renju Joseph", role: "President", img: team12.url },
+  { name: "Dr. Priyankar Bhooshan", role: "Secretary", img: team13.url },
+  { name: "Ms. Maria", role: "Joint Secretary", img: team14.url },
+  { name: "Fr. Vincent Pereppadan", role: "Director of Operations", img: team15.url },
+  { name: "Ms. Sowmini K V", role: "Treasurer", img: team16.url },
+  { name: "Ms. Renjitha C S", role: "Joint Treasurer", img: team17.url },
+  { name: "Fr. Jijo Kandamkulathy", role: "Executive Member", img: team18.url },
+  { name: "Dr. Nisha V M", role: "Executive Member", img: team19.url },
+  { name: "Ms. Devabala Smitha", role: "Executive Member", img: team20.url },
+  { name: "Dr. Manjula Devananda", role: "Executive Member", img: team21.url },
+  { name: "Mr. Abish Jose", role: "Executive Member", img: team22.url },
 ];
+
 
 
 const About = () => (
@@ -125,7 +155,7 @@ const About = () => (
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-elevated">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <img
-                src="https://thinkgyra.org/uploads/teams/1/GYRA_1734498933.png"
+                src={team1.url}
                 alt="Dr. Irimpan Mathews"
                 className="w-32 h-32 rounded-xl object-cover shrink-0"
                 loading="lazy"
@@ -188,12 +218,18 @@ const About = () => (
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
                 {group.people.map((m) => (
                   <div key={m.name} className="text-center">
-                    <img
-                      src={m.img}
-                      alt={`${m.name}, ${m.role} at GYRA`}
-                      className="w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow-card bg-card"
-                      loading="lazy"
-                    />
+                    {m.img ? (
+                      <img
+                        src={m.img}
+                        alt={`${m.name}, ${m.role} at GYRA`}
+                        className="w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow-card bg-card"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="w-24 h-24 rounded-full mx-auto mb-3 shadow-card bg-teal-light flex items-center justify-center font-heading font-extrabold text-xl text-primary">
+                        {initials(m.name)}
+                      </div>
+                    )}
                     <h4 className="font-heading font-bold text-sm text-foreground">{m.name}</h4>
                     <p className="text-xs text-muted-foreground">{m.role}</p>
                   </div>
@@ -216,7 +252,7 @@ const About = () => (
             GYRA currently operates in over 5 countries, partners with 200+ schools, and has an active presence in more than 5 US states — connecting young researchers with mentors and peers around the world.
           </p>
           <img
-            src="https://thinkgyra.org/front/images/map.png"
+            src={globalMap.url}
             alt="GYRA's global expansion map"
             className="w-full rounded-xl shadow-card"
             loading="lazy"
