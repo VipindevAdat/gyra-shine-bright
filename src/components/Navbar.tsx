@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import gyraLogo from "@/assets/gyra-logo.png.asset.json";
+import gyraLogo from "@/assets/gyra_logo.webp";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-3">
           <img
-            src={gyraLogo.url}
+            src={gyraLogo}
             alt="GYRA — Global Young Researchers' Academy logo"
             className="h-10 md:h-12 w-auto"
           />
