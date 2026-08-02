@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import gyraLogo from "@/assets/gyra-logo.png.asset.json";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -19,11 +20,12 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="text-2xl font-heading font-extrabold text-gradient">GYRA</span>
-          <span className="hidden sm:block text-xs text-muted-foreground leading-tight max-w-[140px]">
-            Global Young Researchers' Academy
-          </span>
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src={gyraLogo.url}
+            alt="GYRA — Global Young Researchers' Academy logo"
+            className="h-10 md:h-12 w-auto"
+          />
         </Link>
 
         {/* Desktop nav */}
