@@ -115,7 +115,7 @@ const Programs = () => (
           <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Laureate Program</h2>
           <p className="text-sm font-medium text-primary mb-6">Research in Middle School</p>
           <div className="rounded-xl overflow-hidden shadow-elevated mb-8">
-            <img src={middleSchoolImg.url} alt="GYRA Laureate Program students in a science lab" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
+            <img src={middleSchoolImg} alt="GYRA Laureate Program students in a science lab" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
           </div>
           <p className="text-muted-foreground leading-relaxed mb-6">
             GYRA's middle school program introduces students to the fundamentals of research through a structured, guided, and highly engaging learning experience. Students work closely with trained mentors on a weekly basis — exploring ideas, asking meaningful questions, and presenting their findings with confidence. The program typically spans approximately three years, and upon successful completion students graduate as <strong className="text-foreground">GYRA Laureates</strong>.
@@ -148,7 +148,7 @@ const Programs = () => (
           <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Fellow Program</h2>
           <p className="text-sm font-medium text-primary mb-6">Research in High School</p>
           <div className="rounded-xl overflow-hidden shadow-elevated mb-8">
-            <img src={highSchoolImg.url} alt="GYRA Fellow Program student presenting research at IRCC" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
+            <img src={highSchoolImg} alt="GYRA Fellow Program student presenting research at IRCC" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
           </div>
           <p className="text-muted-foreground leading-relaxed mb-6">
             A personalized one-on-one mentoring program for high school students interested in research, innovation, and global collaboration. Each student receives tailored guidance aligned with their research interests, academic goals, and college application timelines, under the supervision of experienced Ph.D.-level mentors. Students can access the program by volunteering with GYRA and earning mentorship credits, or through a flexible pay-per-hour model that directly supports GYRA's initiatives.
@@ -185,7 +185,7 @@ const Programs = () => (
             </h2>
           </div>
           <div className="rounded-xl overflow-hidden shadow-elevated mb-10 max-w-3xl mx-auto">
-            <img src={irccImg.url} alt="Scientists and young researchers at the IRCC poster session" className="w-full h-auto object-cover" loading="lazy" width={1200} height={800} />
+            <img src={irccImg} alt="Scientists and young researchers at the IRCC poster session" className="w-full h-auto object-cover" loading="lazy" width={1200} height={800} />
           </div>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
             <p>
@@ -210,7 +210,7 @@ const Programs = () => (
             </h2>
           </div>
           <div className="rounded-xl overflow-hidden shadow-elevated mb-10 max-w-3xl mx-auto">
-            <img src={inclusiveImg.url} alt="GYRA inclusive research workshop group photo with students, teachers and mentors" className="w-full h-auto object-cover" loading="lazy" width={1200} height={600} />
+            <img src={inclusiveImg} alt="GYRA inclusive research workshop group photo with students, teachers and mentors" className="w-full h-auto object-cover" loading="lazy" width={1200} height={600} />
           </div>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
             <p>
