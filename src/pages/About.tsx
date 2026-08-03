@@ -44,7 +44,7 @@ const globalOfficials = [
   { name: "Ms. Devi Gireesh", role: "Head of IT", img: "/team_webp/Devi.webp" },
   { name: "Dr. Finosh Thankam", role: "Executive Member", img: "/team_webp/Finosh.webp" },
   { name: "Mr. Raibin Raphy", role: "Executive Member", img: "/team_webp/Raibin.webp" },
-  { name: "Mr. Nixon Xavier", role: "Executive Member", img: "/team_webp/man_placeholder.webp"},
+  // { name: "Mr. Nixon Xavier", role: "Executive Member", img: "/team_webp/man_placeholder.webp"},
   { name: "Mr. Viju Kolattukudy", role: "Executive Member", img: "/team_webp/Viju.webp" },
   { name: "Dr. Ramachandran Thekkedath", role: "Executive Member", img: "/team_webp/Ram.webp" },
   { name: "Dr. Usha R. Thekkedath", role: "Executive Member", img: "/team_webp/Usha.webp" },
@@ -59,7 +59,7 @@ const indiaOfficials = [
   { name: "Ms. Renjitha C S", role: "Joint Treasurer", img: "/team_webp/Renjitha.webp" },
   { name: "Fr. Jijo Kandamkulathy", role: "Executive Member", img: "/team_webp/Jijo.webp" },
   { name: "Dr. Nisha V M", role: "Executive Member", img: "/team_webp/Nisha.webp" },
-  { name: "Ms. Devabala Smitha", role: "Executive Member", img: "/team_webp/women_placeholder.webp" },
+  // { name: "Ms. Devabala Smitha", role: "Executive Member", img: "/team_webp/women_placeholder.webp" },
   { name: "Dr. Manjula Devananda", role: "Executive Member", img: "/team_webp/Manjula.webp" },
   { name: "Mr. Abish Jose", role: "Executive Member", img: "/team_webp/Abish.webp" },
 ];
