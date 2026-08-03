@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { BookOpen, FlaskConical, ArrowRight, CheckCircle, Globe, Accessibility } from "lucide-react";
 import middleSchoolImg from "@/assets/middle-school-program.png.asset.json";
 import highSchoolImg from "@/assets/high-school-program.jpg.asset.json";
+import irccImg from "@/assets/ircc-2.jpg.asset.json";
+import inclusiveImg from "@/assets/special-mission.jpeg.asset.json";
 
 const middleSchoolFeatures = [
   "Introduction to the scientific methodology",
@@ -189,6 +191,9 @@ const Programs = () => (
               International Research Conference for Children (IRCC)
             </h2>
           </div>
+          <div className="rounded-xl overflow-hidden shadow-elevated mb-10 max-w-3xl mx-auto">
+            <img src={irccImg.url} alt="Scientists and young researchers at the IRCC poster session" className="w-full h-auto object-cover" loading="lazy" width={1200} height={800} />
+          </div>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
             <p>
               IRCC, launched in 2023, is GYRA's annual flagship program and a premier global platform for student researchers, educators, parents, and other stakeholders. The conference features keynote addresses, plenary sessions, and presentations by eminent scientists, along with oral and poster presentations by school students.
@@ -210,6 +215,9 @@ const Programs = () => (
             <h2 className="text-3xl font-heading font-extrabold text-foreground mb-4">
               Inclusive Research Platform for Children with Disabilities
             </h2>
+          </div>
+          <div className="rounded-xl overflow-hidden shadow-elevated mb-10 max-w-3xl mx-auto">
+            <img src={inclusiveImg.url} alt="GYRA inclusive research workshop group photo with students, teachers and mentors" className="w-full h-auto object-cover" loading="lazy" width={1200} height={600} />
           </div>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
             <p>
