@@ -1,26 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Eye, Target, Lightbulb, Heart, Globe } from "lucide-react";
-import team1 from "@/assets/team/team-1.png.asset.json";
-import team2 from "@/assets/team/team-2.jpg.asset.json";
-import team3 from "@/assets/team/team-3.png.asset.json";
-import team4 from "@/assets/team/team-4.png.asset.json";
-import team6 from "@/assets/team/team-6.png.asset.json";
-import team7 from "@/assets/team/team-7.png.asset.json";
-import team10 from "@/assets/team/team-10.png.asset.json";
-import team11 from "@/assets/team/team-11.jpg.asset.json";
-import team12 from "@/assets/team/team-12.png.asset.json";
-import team13 from "@/assets/team/team-13.png.asset.json";
-import team14 from "@/assets/team/team-14.png.asset.json";
-import team15 from "@/assets/team/team-15.png.asset.json";
-import team16 from "@/assets/team/team-16.png.asset.json";
-import team17 from "@/assets/team/team-17.png.asset.json";
-import team18 from "@/assets/team/team-18.png.asset.json";
-import team19 from "@/assets/team/team-19.png.asset.json";
-import team20 from "@/assets/team/team-20.jpg.asset.json";
-import team21 from "@/assets/team/team-21.png.asset.json";
-import team22 from "@/assets/team/team-22.png.asset.json";
-import globalMap from "@/assets/team/global-map.png.asset.json";
 
 const values = [
   {
@@ -52,31 +32,36 @@ const initials = (name: string) =>
     .map((n) => n[0])
     .join("");
 
+    const presidentData = {
+      name: "Dr. Irimpan Mathews",
+      img: "/team_webp/Irimpan_Mathews.webp"
+    }
+
 const globalOfficials = [
-  { name: "Dr. Irimpan Mathews", role: "President", img: team1.url },
-  { name: "Dr. Vipindev Adat Vasudevan", role: "Secretary", img: team2.url },
-  { name: "Ms. Divya V V", role: "Treasurer", img: team3.url },
-  { name: "Ms. Devi Gireesh", role: "Head of IT", img: team4.url },
-  { name: "Dr. Finosh Thankam", role: "Executive Member", img: team6.url },
-  { name: "Mr. Raibin Raphy", role: "Executive Member", img: team7.url },
-  { name: "Mr. Nixon Xavier", role: "Executive Member", img: team10.url },
-  { name: "Mr. Viju Kolattukudy", role: "Executive Member", img: team11.url },
-  { name: "Dr. Ramachandran Thekkedath", role: "Executive Member", img: "" },
-  { name: "Dr. Usha R. Thekkedath", role: "Executive Member", img: "" },
+  { name: "Dr. Irimpan Mathews", role: "President", img: "/team_webp/Irimpan_Mathews.webp" },
+  { name: "Dr. Vipindev Adat Vasudevan", role: "Secretary", img:"/team_webp/Vipin.webp" },
+  { name: "Ms. Divya V V", role: "Treasurer", img: "/team_webp/Divya.webp" },
+  { name: "Ms. Devi Gireesh", role: "Head of IT", img: "/team_webp/Devi.webp" },
+  { name: "Dr. Finosh Thankam", role: "Executive Member", img: "/team_webp/Finosh.webp" },
+  { name: "Mr. Raibin Raphy", role: "Executive Member", img: "/team_webp/Raibin.webp" },
+  { name: "Mr. Nixon Xavier", role: "Executive Member", img: "/team_webp/man_placeholder.webp"},
+  { name: "Mr. Viju Kolattukudy", role: "Executive Member", img: "/team_webp/Viju.webp" },
+  { name: "Dr. Ramachandran Thekkedath", role: "Executive Member", img: "/team_webp/Ram.webp" },
+  { name: "Dr. Usha R. Thekkedath", role: "Executive Member", img: "/team_webp/Usha.webp" },
 ];
 
 const indiaOfficials = [
-  { name: "Dr. Renju Joseph", role: "President", img: team12.url },
-  { name: "Dr. Priyankar Bhooshan", role: "Secretary", img: team13.url },
-  { name: "Ms. Maria", role: "Joint Secretary", img: team14.url },
-  { name: "Fr. Vincent Pereppadan", role: "Director of Operations", img: team15.url },
-  { name: "Ms. Sowmini K V", role: "Treasurer", img: team16.url },
-  { name: "Ms. Renjitha C S", role: "Joint Treasurer", img: team17.url },
-  { name: "Fr. Jijo Kandamkulathy", role: "Executive Member", img: team18.url },
-  { name: "Dr. Nisha V M", role: "Executive Member", img: team19.url },
-  { name: "Ms. Devabala Smitha", role: "Executive Member", img: team20.url },
-  { name: "Dr. Manjula Devananda", role: "Executive Member", img: team21.url },
-  { name: "Mr. Abish Jose", role: "Executive Member", img: team22.url },
+  { name: "Dr. Renju Joseph", role: "President", img: "/team_webp/Renju.webp" },
+  { name: "Dr. Priyankar Bhooshan", role: "Secretary", img: "/team_webp/Priyankar.webp" },
+  { name: "Ms. Maria", role: "Joint Secretary", img: "/team_webp/Maria.webp" },
+  { name: "Fr. Vincent Pereppadan", role: "Director of Operations", img:"/team_webp/Vincent.webp" },
+  { name: "Ms. Sowmini K V", role: "Treasurer", img: "/team_webp/Sowmini.webp" },
+  { name: "Ms. Renjitha C S", role: "Joint Treasurer", img: "/team_webp/Renjitha.webp" },
+  { name: "Fr. Jijo Kandamkulathy", role: "Executive Member", img: "/team_webp/Jijo.webp" },
+  { name: "Dr. Nisha V M", role: "Executive Member", img: "/team_webp/Nisha.webp" },
+  { name: "Ms. Devabala Smitha", role: "Executive Member", img: "/team_webp/women_placeholder.webp" },
+  { name: "Dr. Manjula Devananda", role: "Executive Member", img: "/team_webp/Manjula.webp" },
+  { name: "Mr. Abish Jose", role: "Executive Member", img: "/team_webp/Abish.webp" },
 ];
 
 
@@ -155,14 +140,14 @@ const About = () => (
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-elevated">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <img
-                src={team1.url}
-                alt="Dr. Irimpan Mathews"
+                src={presidentData.img}
+                alt={presidentData.name}
                 className="w-32 h-32 rounded-xl object-cover shrink-0"
                 loading="lazy"
               />
               <div>
                 <h2 className="text-2xl font-heading font-extrabold text-foreground mb-1">President's Message</h2>
-                <p className="text-sm text-primary font-medium mb-4">Dr. Irimpan Mathews, Global President</p>
+                <p className="text-sm text-primary font-medium mb-4">{presidentData.name}</p>
                 <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
                   <p>
                     GYRA is the name of an endangered African cat. It looks tiny but moves swiftly and its eyes glitter with curiosity. Global Young Researchers' Academy loves to inherit those characteristics, especially its curiosity.
@@ -252,7 +237,7 @@ const About = () => (
             GYRA currently operates in over 5 countries, partners with 200+ schools, and has an active presence in more than 5 US states — connecting young researchers with mentors and peers around the world.
           </p>
           <img
-            src={globalMap.url}
+            src={"/team_webp/global-map.webp"}
             alt="GYRA's global expansion map"
             className="w-full rounded-xl shadow-card"
             loading="lazy"
