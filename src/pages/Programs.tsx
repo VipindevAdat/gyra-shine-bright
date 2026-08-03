@@ -105,77 +105,70 @@ const Programs = () => (
 
       {/* Middle School */}
       <section className="py-20 lg:py-28">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-teal-light flex items-center justify-center">
-                  <BookOpen className="text-primary" size={20} />
-                </div>
-                <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 6–8</span>
-              </div>
-              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Laureate Program</h2>
-              <p className="text-sm font-medium text-primary mb-4">Research in Middle School</p>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                GYRA's middle school program introduces students to the fundamentals of research through a structured, guided, and highly engaging learning experience. Students work closely with trained mentors on a weekly basis — exploring ideas, asking meaningful questions, and presenting their findings with confidence. The program typically spans approximately three years, and upon successful completion students graduate as <strong className="text-foreground">GYRA Laureates</strong>.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {middleSchoolFeatures.map((f) => (
-                  <li key={f} className="flex items-start gap-3 text-sm text-foreground/80">
-                    <CheckCircle className="text-primary shrink-0 mt-0.5" size={16} />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <Button asChild className="bg-gradient-hero hover:opacity-90 transition-opacity">
-                <Link to="/contact">
-                  Enroll Now <ArrowRight className="ml-2" size={16} />
-                </Link>
-              </Button>
+        <div className="container max-w-4xl">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-lg bg-teal-light flex items-center justify-center">
+              <BookOpen className="text-primary" size={20} />
             </div>
-            <div className="rounded-xl overflow-hidden shadow-elevated">
-              <img src={middleSchoolImg.url} alt="GYRA Laureate Program students in a science lab" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
-            </div>
+            <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 6–8</span>
           </div>
+          <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Laureate Program</h2>
+          <p className="text-sm font-medium text-primary mb-6">Research in Middle School</p>
+          <div className="rounded-xl overflow-hidden shadow-elevated mb-8">
+            <img src={middleSchoolImg.url} alt="GYRA Laureate Program students in a science lab" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
+          </div>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            GYRA's middle school program introduces students to the fundamentals of research through a structured, guided, and highly engaging learning experience. Students work closely with trained mentors on a weekly basis — exploring ideas, asking meaningful questions, and presenting their findings with confidence. The program typically spans approximately three years, and upon successful completion students graduate as <strong className="text-foreground">GYRA Laureates</strong>.
+          </p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {middleSchoolFeatures.map((f) => (
+              <li key={f} className="flex items-start gap-3 text-sm text-foreground/80">
+                <CheckCircle className="text-primary shrink-0 mt-0.5" size={16} />
+                {f}
+              </li>
+            ))}
+          </ul>
+          <Button asChild className="bg-gradient-hero hover:opacity-90 transition-opacity">
+            <Link to="/contact">
+              Enroll Now <ArrowRight className="ml-2" size={16} />
+            </Link>
+          </Button>
         </div>
       </section>
 
       {/* High School */}
       <section className="py-20 lg:py-28 bg-muted">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-elevated">
-              <img src={highSchoolImg.url} alt="GYRA Fellow Program student presenting research at IRCC" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
+        <div className="container max-w-4xl">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-lg bg-teal-light flex items-center justify-center">
+              <FlaskConical className="text-primary" size={20} />
             </div>
-            <div className="order-1 lg:order-2">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-teal-light flex items-center justify-center">
-                  <FlaskConical className="text-primary" size={20} />
-                </div>
-                <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 9–12</span>
-              </div>
-              <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Fellow Program</h2>
-              <p className="text-sm font-medium text-primary mb-4">Research in High School</p>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                A personalized one-on-one mentoring program for high school students interested in research, innovation, and global collaboration. Each student receives tailored guidance aligned with their research interests, academic goals, and college application timelines, under the supervision of experienced Ph.D.-level mentors. Students can access the program by volunteering with GYRA and earning mentorship credits, or through a flexible pay-per-hour model that directly supports GYRA's initiatives.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {highSchoolFeatures.map((f) => (
-                  <li key={f} className="flex items-start gap-3 text-sm text-foreground/80">
-                    <CheckCircle className="text-primary shrink-0 mt-0.5" size={16} />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <Button asChild className="bg-gradient-hero hover:opacity-90 transition-opacity">
-                <Link to="/contact">
-                  Enroll Now <ArrowRight className="ml-2" size={16} />
-                </Link>
-              </Button>
-            </div>
+            <span className="text-sm font-medium text-primary bg-teal-light px-3 py-1 rounded-full">Grades 9–12</span>
           </div>
+          <h2 className="text-3xl font-heading font-extrabold text-foreground mb-2">GYRA Fellow Program</h2>
+          <p className="text-sm font-medium text-primary mb-6">Research in High School</p>
+          <div className="rounded-xl overflow-hidden shadow-elevated mb-8">
+            <img src={highSchoolImg.url} alt="GYRA Fellow Program student presenting research at IRCC" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
+          </div>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            A personalized one-on-one mentoring program for high school students interested in research, innovation, and global collaboration. Each student receives tailored guidance aligned with their research interests, academic goals, and college application timelines, under the supervision of experienced Ph.D.-level mentors. Students can access the program by volunteering with GYRA and earning mentorship credits, or through a flexible pay-per-hour model that directly supports GYRA's initiatives.
+          </p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {highSchoolFeatures.map((f) => (
+              <li key={f} className="flex items-start gap-3 text-sm text-foreground/80">
+                <CheckCircle className="text-primary shrink-0 mt-0.5" size={16} />
+                {f}
+              </li>
+            ))}
+          </ul>
+          <Button asChild className="bg-gradient-hero hover:opacity-90 transition-opacity">
+            <Link to="/contact">
+              Enroll Now <ArrowRight className="ml-2" size={16} />
+            </Link>
+          </Button>
         </div>
       </section>
+
 
 
 
