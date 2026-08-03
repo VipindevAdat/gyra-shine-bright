@@ -8,7 +8,7 @@ const programs = [
   {
     title: "GYRA Laureate Program",
     grades: "Grades 6–8",
-    image: middleSchoolImg.url,
+    image: middleSchoolImg,
     icon: BookOpen,
     description:
       "Introduce young minds to the joy of scientific inquiry. Students learn observation, questioning, and basic research methodology through fun, hands-on projects.",
@@ -22,7 +22,7 @@ const programs = [
   {
     title: "GYRA Fellow Program",
     grades: "Grades 9–12",
-    image: highSchoolImg.url,
+    image: highSchoolImg,
     icon: FlaskConical,
     description:
       "Advanced research training for serious young scientists. Students design independent studies, analyze data, and present findings at national and international conferences.",
