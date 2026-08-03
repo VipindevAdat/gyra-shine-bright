@@ -102,7 +102,7 @@ const About = () => (
             {[
               { value: "5+", label: "Countries" },
               { value: "2,000+", label: "Students reached" },
-              { value: "200+", label: "Partner schools" },
+              { value: "100+", label: "Partner schools" },
               { value: "100+", label: "Volunteer scientists" },
             ].map((s) => (
               <div key={s.label} className="bg-card rounded-xl p-6 text-center shadow-card">
