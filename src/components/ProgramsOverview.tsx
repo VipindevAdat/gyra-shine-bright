@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, FlaskConical } from "lucide-react";
-import middleSchoolImg from "@/assets/middle-school-program.jpg";
-import highSchoolImg from "@/assets/high-school-program.jpg";
+import middleSchoolImg from "@/assets/middle-school-program.png.asset.json";
+import highSchoolImg from "@/assets/high-school-program.jpg.asset.json";
 
 const programs = [
   {
-    title: "Middle School Program",
-    grades: "Grades 1–8",
-    image: middleSchoolImg,
+    title: "GYRA Laureate Program",
+    grades: "Grades 6–8",
+    image: middleSchoolImg.url,
     icon: BookOpen,
     description:
       "Introduce young minds to the joy of scientific inquiry. Students learn observation, questioning, and basic research methodology through fun, hands-on projects.",
@@ -20,9 +20,9 @@ const programs = [
     ],
   },
   {
-    title: "High School Program",
+    title: "GYRA Fellow Program",
     grades: "Grades 9–12",
-    image: highSchoolImg,
+    image: highSchoolImg.url,
     icon: FlaskConical,
     description:
       "Advanced research training for serious young scientists. Students design independent studies, analyze data, and present findings at national and international conferences.",

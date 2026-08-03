@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BookOpen, FlaskConical, ArrowRight, CheckCircle, Globe, Accessibility } from "lucide-react";
-import middleSchoolImg from "@/assets/middle-school-program.jpg";
-import highSchoolImg from "@/assets/high-school-program.jpg";
+import middleSchoolImg from "@/assets/middle-school-program.png.asset.json";
+import highSchoolImg from "@/assets/high-school-program.jpg.asset.json";
 
 const middleSchoolFeatures = [
   "Introduction to the scientific methodology",
@@ -132,7 +132,7 @@ const Programs = () => (
               </Button>
             </div>
             <div className="rounded-xl overflow-hidden shadow-elevated">
-              <img src={middleSchoolImg} alt="Middle school students in a science lab" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
+              <img src={middleSchoolImg.url} alt="GYRA Laureate Program students in a science lab" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ const Programs = () => (
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-elevated">
-              <img src={highSchoolImg} alt="High school students at a research conference" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
+              <img src={highSchoolImg.url} alt="GYRA Fellow Program student presenting research at IRCC" className="w-full h-auto object-cover" loading="lazy" width={800} height={600} />
             </div>
             <div className="order-1 lg:order-2">
               <div className="flex items-center gap-3 mb-4">
