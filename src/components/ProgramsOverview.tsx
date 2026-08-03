@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, FlaskConical } from "lucide-react";
-import middleSchoolImg from "@/assets/middle-school-program.png.asset.json";
-import highSchoolImg from "@/assets/high-school-program.jpg.asset.json";
+import middleSchoolImg from "@/assets/middle_school.png";
+import highSchoolImg from "@/assets/HighSchool.jpg";
 
 const programs = [
   {
