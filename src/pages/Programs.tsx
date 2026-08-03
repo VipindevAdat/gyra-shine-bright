@@ -3,10 +3,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BookOpen, FlaskConical, ArrowRight, CheckCircle, Globe, Accessibility } from "lucide-react";
-import middleSchoolImg from "@/assets/middle-school-program.png.asset.json";
-import highSchoolImg from "@/assets/high-school-program.jpg.asset.json";
-import irccImg from "@/assets/ircc-2.jpg.asset.json";
-import inclusiveImg from "@/assets/special-mission.jpeg.asset.json";
+import middleSchoolImg from "@/assets/middle_school.png";
+import highSchoolImg from "@/assets/HighSchool.jpg";
+import irccImg from "@/assets/IRCC_2.jpg";
+import inclusiveImg from "@/assets/special_mission.jpeg";
 
 const middleSchoolFeatures = [
   "Introduction to the scientific methodology",
