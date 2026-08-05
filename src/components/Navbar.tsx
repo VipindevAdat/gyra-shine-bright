@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Programs", path: "/programs" },
   { label: "Why GYRA", path: "/why-gyra" },
   { label: "About", path: "/about" },
-  { label: "Institutions", path: "/institutions" },
   { label: "Contact", path: "/contact" },
 ];
 
