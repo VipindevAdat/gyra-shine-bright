@@ -27,7 +27,6 @@ const App = () => (
           <Route path="/why-gyra" element={<WhyGyra />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/institutions" element={<Institutions />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
