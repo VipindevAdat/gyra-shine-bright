@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Mail, MapPin, Globe, Send, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Globe, Send, CheckCircle, Award } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -131,7 +131,7 @@ const Contact = () => {
               {/* Contact info sidebar */}
               <div className="space-y-8">
                 <div className="bg-card rounded-xl shadow-card p-8">
-                  <h3 className="font-heading font-bold text-lg text-foreground mb-6">Contact Information</h3>
+                  <h3 className="font-heading font-bold text-lg text-foreground mb-6">Contact & Official Information</h3>
                   <div className="space-y-5">
                     <div className="flex items-start gap-3">
                       <div className="w-10 h-10 rounded-lg bg-teal-light flex items-center justify-center shrink-0">
@@ -160,8 +160,17 @@ const Contact = () => {
                         <MapPin className="text-primary" size={18} />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-foreground">Headquarters</p>
-                        <p className="text-sm text-muted-foreground">Oregon, USA<br />Global Operations</p>
+                        <p className="text-sm font-medium text-foreground">Physical Address</p>
+                        <p className="text-sm text-primary">14138 NW GARGANY ST PORTLAND OR 97229 US</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-teal-light flex items-center justify-center shrink-0">
+                        <Award className="text-primary" size={18} />
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-foreground">Charity ID</p>
+                        <p className="text-sm text-primary">20156139</p>
                       </div>
                     </div>
                   </div>

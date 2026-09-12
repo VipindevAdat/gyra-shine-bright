@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin, Globe, Award } from "lucide-react";
 import gyraLogo from "@/assets/gyra_logo.webp";
 
 const Footer = () => (
@@ -75,14 +75,19 @@ const Footer = () => (
             </li>
             <li className="flex items-start gap-2 text-primary-foreground/70">
               <MapPin size={16} className="mt-0.5 shrink-0" />
-              <span>Oregon, USA (Global Operations)</span>
+              <span>14138 NW Gargany St, Portland, OR 97229, US</span>
+            </li>
+            <li className="flex items-start gap-2 text-primary-foreground/70">
+              <Award size={16} className="mt-0.5 shrink-0" />
+              <span>Charity ID: 20156139</span>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-xs text-primary-foreground/40">
-        © {new Date().getFullYear()} GYRA — Global Young Researchers' Academy. All rights reserved.
+      <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-xs text-primary-foreground/40 space-y-1">
+        <p>thinkgyra.org is the official website of Global Young Researchers' Academy (GYRA), a registered nonprofit organization.</p>
+        <p>© {new Date().getFullYear()} GYRA — Global Young Researchers' Academy. All rights reserved.</p>
       </div>
     </div>
   </footer>

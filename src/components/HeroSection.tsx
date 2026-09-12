@@ -27,7 +27,7 @@ const HeroSection = () => (
           <span className="text-gradient">Think Like a Scientist</span>
         </h1>
         <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed max-w-xl">
-          GYRA nurtures curiosity and critical thinking through real research projects - guided by expert mentors from around the world. Programs for grades 1–12.
+          GYRA is a 501(c)(3) nonprofit organization that empowers students in grades 1–12 through real-world research opportunities, fostering curiosity, critical thinking, and a passion for discovery with guidance from expert mentors around the world.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button asChild size="lg" className="bg-gradient-hero hover:opacity-90 transition-opacity text-base px-8 h-12">

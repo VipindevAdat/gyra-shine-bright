@@ -226,6 +226,38 @@ const About = () => (
       </section>
 
 
+      {/* Organization Info */}
+      <section className="py-20 lg:py-28 bg-muted">
+        <div className="container max-w-3xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-heading font-extrabold text-foreground mb-3">Organization Details</h2>
+            <p className="text-muted-foreground">Legal and contact information</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                label: "Charity ID",
+                value: "20156139", // Replace with actual ID
+              },
+              {
+                label: "Email",
+                value: "gyraglobal@gmail.com", // Replace with actual email
+              },
+              {
+                label: "Address",
+                value: "14138 NW GARGANY ST PORTLAND OR 97229 US", // Replace with actual address
+              },
+            ].map((item) => (
+              <div key={item.label} className="bg-card rounded-xl p-6 shadow-card text-center">
+                <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{item.label}</p>
+                <p className="text-sm text-foreground font-medium leading-relaxed">{item.value}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Global Map */}
       <section className="py-20 lg:py-28">
         <div className="container text-center max-w-4xl">
