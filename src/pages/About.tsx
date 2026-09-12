@@ -227,7 +227,7 @@ const About = () => (
 
 
       {/* Organization Info */}
-      <section className="py-20 lg:py-28 bg-muted">
+      <section className="py-5 lg:py-5 bg-muted">
         <div className="container max-w-3xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-heading font-extrabold text-foreground mb-3">Organization Details</h2>
