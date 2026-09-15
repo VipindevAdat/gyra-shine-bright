@@ -170,7 +170,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="text-sm font-medium text-foreground">Charity ID</p>
-                        <p className="text-sm text-primary">20156139</p>
+                        <p className="text-sm text-primary">201561396</p>
                       </div>
                     </div>
                   </div>

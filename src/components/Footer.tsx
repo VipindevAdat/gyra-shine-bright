@@ -79,7 +79,7 @@ const Footer = () => (
             </li>
             <li className="flex items-start gap-2 text-primary-foreground/70">
               <Award size={16} className="mt-0.5 shrink-0" />
-              <span>Charity ID: 20156139</span>
+              <span>Charity ID: 201561396</span>
             </li>
           </ul>
         </div>
