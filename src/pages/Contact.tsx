@@ -139,8 +139,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="text-sm font-medium text-foreground">Email</p>
-                        <a href="mailto:gyraglobal@gmail.com" className="text-sm text-primary hover:underline">
-                          gyraglobal@gmail.com
+                        <a href="mailto:info@thinkgyra.org" className="text-sm text-primary hover:underline">
+                          info@thinkgyra.org
                         </a>
                       </div>
                     </div>
@@ -181,7 +181,7 @@ const Contact = () => {
                   <p className="text-sm text-primary-foreground/70 leading-relaxed mb-4">
                     Interested in setting up a GYRA chapter at your school? We'd love to partner with you. Reach out to learn about institutional partnerships.
                   </p>
-                  <a href="mailto:gyraglobal@gmail.com" className="text-sm text-primary-foreground underline hover:no-underline">
+                  <a href="mailto:info@thinkgyra.org" className="text-sm text-primary-foreground underline hover:no-underline">
                     Email us directly →
                   </a>
                 </div>
