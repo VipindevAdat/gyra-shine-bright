@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BookOpen, FlaskConical, ArrowRight, CheckCircle, Globe, Accessibility } from "lucide-react";
-import middleSchoolImg from "@/assets/middle_school.png";
-import highSchoolImg from "@/assets/HighSchool.jpg";
+import middleSchoolImg from "@/assets/53.webp";
+import highSchoolImg from "@/assets/IRCC26-2.webp";
 import irccImg from "@/assets/IRCC_2.jpg";
 import inclusiveImg from "@/assets/special_mission.jpeg";
 
